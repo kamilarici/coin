@@ -13,6 +13,7 @@ const getCoins = async () => {
     }
     const data = await res.json();
     coins = data.data.coins;
+    console.log(coins);
   } catch (error) {
     console.log(error);
   }
